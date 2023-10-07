@@ -1,6 +1,8 @@
 # LEA-IA-Alpha
 LEA-IA-Alpha
 
+### DEV V1
+
 Voici La structure du projet en 5 dossiers:
 
 1. api/
@@ -49,3 +51,38 @@ Cette structure sépare les différentes parties du projet :
 - Le chatbot dans chatbot/
 - Les tests dans tests/
 - La config dans config/
+
+  ### DEV V2
+
+  API:
+- api/routes/messages.py
+- Créer une fonction pour créer un message
+- Créer une fonction pour récupérer tous les messages
+
+Modèle de données:
+- app/models.py
+- Ajouter des validations avec Pydantic
+- app/db.py
+- Créer le schéma MongoDB
+- Ajouter les fonctions de CRUD
+
+Chatbot:
+- chatbot/predict.py
+- Utiliser un pipeline Transformer
+- chatbot/data.py
+- Fonction pour charger les données d'entraînement
+- chatbot/train.py
+- Ajouter l'appel à la fonction de chargement des données
+- Ajouter l'entraînement personnalisé
+
+Tests:
+- tests/test_api.py
+- Ajouter des tests pour les routes POST/GET
+- tests/test_db.py
+- Tester les fonctions de persistance
+
+Configuration:
+- config/settings.py
+- Définir les variables d'environnement
+- Dockerfile
+- Construire l'image docker
